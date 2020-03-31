@@ -1,6 +1,6 @@
 # pylint: disable=line-too-long
 """
-Default Misago settings. Override these with settings in the module pointed to
+Default Kaopu settings. Override these with settings in the module pointed to
 by the DJANGO_SETTINGS_MODULE environment variable.
 
 If you rely on any of those in your code, make sure you use `misago.conf.settings`
@@ -25,7 +25,7 @@ MISAGO_ACL_EXTENSIONS = [
 ]
 
 
-# Path to the directory that Misago should use to prepare user data downloads.
+# Path to the directory that Kaopu should use to prepare user data downloads.
 # Should not be accessible from internet.
 
 MISAGO_USER_DATA_DOWNLOADS_WORKING_DIR = None
@@ -114,13 +114,13 @@ MISAGO_PROFILE_FIELDS = []
 MISAGO_LOGIN_API_URL = "auth"
 
 
-# Misago Admin Path
-# Omit starting and trailing slashes. To disable Misago admin, empty this value.
+# Kaopu Admin Path
+# Omit starting and trailing slashes. To disable Kaopu admin, empty this value.
 
 MISAGO_ADMIN_PATH = "admincp"
 
 
-# Admin urls namespaces that Misago's AdminAuthMiddleware should protect
+# Admin urls namespaces that Kaopu's AdminAuthMiddleware should protect
 
 MISAGO_ADMIN_NAMESPACES = ["admin", "misago:admin"]
 
@@ -159,7 +159,7 @@ MISAGO_AVATARS_SIZES = [400, 200, 150, 100, 64, 50, 30]
 MISAGO_BLANK_AVATAR = "misago/img/blank-avatar.png"
 
 
-# Max allowed size of image before Misago will generate thumbnail for it
+# Max allowed size of image before Kaopu will generate thumbnail for it
 
 MISAGO_ATTACHMENT_IMAGE_SIZE_LIMIT = (500, 500)
 

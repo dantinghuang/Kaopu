@@ -38,7 +38,7 @@ class PrivacyPolicyTests(AuthenticatedUserTestCase):
         )
 
     def test_context_processor_misago_policy(self):
-        """context processor has TOS link to Misago view"""
+        """context processor has TOS link to Kaopu view"""
         agreement = Agreement.objects.create(
             type=Agreement.TYPE_PRIVACY, text="Lorem ipsum", is_active=True
         )
@@ -132,7 +132,7 @@ class TermsOfServiceTests(AuthenticatedUserTestCase):
         )
 
     def test_context_processor_misago_tos(self):
-        """context processor has TOS link to Misago view"""
+        """context processor has TOS link to Kaopu view"""
         agreement = Agreement.objects.create(
             type=Agreement.TYPE_TOS, text="Lorem ipsum", is_active=True
         )

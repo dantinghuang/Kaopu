@@ -1,11 +1,11 @@
 import assert from 'assert';
-import { Misago } from 'misago/index';
+import { Kaopu } from 'misago/index';
 
 var misago = null;
 
-describe('Misago', function() {
+describe('Kaopu', function() {
   it("addInitializer registers new initializer", function() {
-    misago = new Misago();
+    misago = new Kaopu();
 
     misago.addInitializer({
       name: 'test',
@@ -22,7 +22,7 @@ describe('Misago', function() {
   });
 
   it("init() calls test initializer", function() {
-    misago = new Misago();
+    misago = new Kaopu();
 
     misago.addInitializer({
       name: 'test',
@@ -36,7 +36,7 @@ describe('Misago', function() {
   });
 
   it("init() calls test initializers in order", function() {
-    misago = new Misago();
+    misago = new Kaopu();
 
     misago.addInitializer({
       name: 'carrot',
@@ -83,7 +83,7 @@ describe('Misago', function() {
   });
 
   it("has() tests if context has value", function() {
-    misago = new Misago();
+    misago = new Kaopu();
     misago.init({valid: 'okay'});
 
     assert.equal(misago.has('invalid'), false,
@@ -93,7 +93,7 @@ describe('Misago', function() {
   });
 
   it("get() allows access to context values", function() {
-    misago = new Misago();
+    misago = new Kaopu();
     misago.init({valid: 'okay'});
 
     assert.equal(misago.get('invalid'), undefined,
@@ -107,7 +107,7 @@ describe('Misago', function() {
   });
 
   it("pop() allows single time access to context values", function() {
-    misago = new Misago();
+    misago = new Kaopu();
     misago.init({valid: 'okay'});
 
     assert.equal(misago.pop('invalid'), undefined,

@@ -49,10 +49,11 @@ urlpatterns = [
 
 
 # If debug mode is enabled, include debug toolbar
-if settings.DEBUG:
-    import debug_toolbar
+# Xuanyu Li No debug
+# if settings.DEBUG:
+#     import debug_toolbar
 
-    urlpatterns += [url(r"^__debug__/", include(debug_toolbar.urls))]
+#     urlpatterns += [url(r"^__debug__/", include(debug_toolbar.urls))]
 
 
 # Use static file server for static and media files (debug only)
@@ -61,7 +62,7 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 # Error Handlers
-# Misago needs those handlers to deal with errors raised by it's middlewares
+# Kaopu needs those handlers to deal with errors raised by it's middlewares
 # If you replace those handlers with custom ones, make sure you decorate them
 # with shared_403_exception_handler or shared_404_exception_handler
 # decorators that are defined in misago.views.errorpages module!

@@ -13,13 +13,13 @@ class MailTests(TestCase):
     def test_building_mail_without_context_raises_value_error(self):
         user = create_test_user("User", "user@example.com")
         with self.assertRaises(ValueError):
-            build_mail(user, "Misago Test Mail", "misago/emails/base")
+            build_mail(user, "Kaopu Test Mail", "misago/emails/base")
 
     def test_building_mail_without_settings_in_context_raises_value_error(self):
         user = create_test_user("User", "user@example.com")
         with self.assertRaises(ValueError):
             build_mail(
-                user, "Misago Test Mail", "misago/emails/base", context={"settings": {}}
+                user, "Kaopu Test Mail", "misago/emails/base", context={"settings": {}}
             )
 
     @override_dynamic_settings(forum_address="http://test.com/")
@@ -32,12 +32,12 @@ class MailTests(TestCase):
 
         mail_user(
             user,
-            "Misago Test Mail",
+            "Kaopu Test Mail",
             "misago/emails/base",
             context={"settings": settings},
         )
 
-        self.assertEqual(mail.outbox[0].subject, "Misago Test Mail")
+        self.assertEqual(mail.outbox[0].subject, "Kaopu Test Mail")
 
         # assert that url to user's avatar is valid
         html_body = mail.outbox[0].alternatives[0][0]
@@ -62,14 +62,14 @@ class MailTests(TestCase):
 
         mail_users(
             test_users,
-            "Misago Test Spam",
+            "Kaopu Test Spam",
             "misago/emails/base",
             context={"settings": settings},
         )
 
         spams_sent = 0
         for message in mail.outbox:
-            if message.subject == "Misago Test Spam":
+            if message.subject == "Kaopu Test Spam":
                 spams_sent += 1
 
         self.assertEqual(spams_sent, len(test_users))

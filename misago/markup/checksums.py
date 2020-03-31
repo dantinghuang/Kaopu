@@ -1,5 +1,5 @@
 """
-Misago saves parsed strings in database.
+Kaopu saves parsed strings in database.
 
 Those strings are "trusted" and contain HTML that is rendered by templates
 without additional sanitization step.

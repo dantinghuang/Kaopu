@@ -75,7 +75,7 @@ class MisagoAdminExtension:
         site.add_node(
             name=_("Single Sign-On"),
             description=_(
-                "SSO enables you to delegate user login and registration from Misago to"
+                "SSO enables you to delegate user login and registration from Kaopu to"
                 "the third party site."
             ),
             parent="settings",

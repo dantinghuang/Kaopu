@@ -18,7 +18,7 @@ class Banned(PermissionDenied):
 
 
 class SocialAuthFailed(AuthException):
-    """Exception used to return error messages from Misago's social auth to user."""
+    """Exception used to return error messages from Kaopu's social auth to user."""
 
     def __init__(self, backend, message):
         self.backend = backend
@@ -26,7 +26,7 @@ class SocialAuthFailed(AuthException):
 
 
 class SocialAuthBanned(AuthException):
-    """Exception used to return ban message from Misago's social auth to user."""
+    """Exception used to return ban message from Kaopu's social auth to user."""
 
     def __init__(self, backend, ban):
         self.backend = backend

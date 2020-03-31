@@ -50,7 +50,7 @@ def test_settings_cache_key_includes_cache_name_and_version(db, mocker, cache_ve
 
 def test_accessing_attr_returns_setting_value(db, cache_versions):
     settings = DynamicSettings(cache_versions)
-    assert settings.forum_name == "Misago"
+    assert settings.forum_name == "Kaopu"
 
 
 def test_accessing_attr_for_undefined_setting_raises_attribute_error(

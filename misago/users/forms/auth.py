@@ -53,7 +53,7 @@ class MisagoAuthMixin:
 class AuthenticationForm(MisagoAuthMixin, BaseAuthenticationForm):
     """
     Base class for authenticating users, Floppy-forms and
-    Misago login field compliant
+    Kaopu login field compliant
     """
 
     username = forms.CharField(

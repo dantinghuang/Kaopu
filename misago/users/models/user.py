@@ -124,7 +124,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(max_length=30)
     slug = models.CharField(max_length=30, unique=True)
 
-    # Misago stores user email in two fields:
+    # Kaopu stores user email in two fields:
     # "email" holds normalized email address
     # "email_hash" is lowercase hash of email address used to identify account
     # as well as enforcing on database level that no more than one user can be

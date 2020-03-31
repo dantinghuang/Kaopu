@@ -110,7 +110,7 @@ msgid "Private threads moderator"
 msgstr "隐蔽话题版主"
 
 #: acl/panels.py:8
-msgid "Misago User ACL"
+msgid "Kaopu User ACL"
 msgstr "用户访问权限控制表"
 
 #: acl/panels.py:17
@@ -492,7 +492,7 @@ msgstr "单点登录"
 
 #: conf/admin/__init__.py:78
 msgid ""
-"SSO enables you to delegate user login and registration from Misago tothe "
+"SSO enables you to delegate user login and registration from Kaopu tothe "
 "third party site."
 msgstr "启用单点登录可以将你网站的登录和注册委派给第三方网站。"
 
@@ -594,7 +594,7 @@ msgstr "通过 SFS 数据库验证新注册"
 
 #: conf/admin/forms/captcha.py:54
 msgid ""
-"Turning this option on will result in Misago validating new user's e-mail "
+"Turning this option on will result in Kaopu validating new user's e-mail "
 "and IP address against SFS database."
 msgstr "打开此选项，系统将根据 SFS 数据库验证新用户的电子邮件和 IP 地址。"
 
@@ -606,7 +606,7 @@ msgstr "最低 SFS 可信度要求"
 msgid ""
 "SFS compares user e-mail and IP address with database of known spammers and "
 "assigns the confidence score in range of 0 to 100 that user is a spammer "
-"themselves. If this score is equal or higher than specified, Misago will "
+"themselves. If this score is equal or higher than specified, Kaopu will "
 "block user from registering and ban their IP address for 24 hours."
 msgstr ""
 "SFS 将用户电子邮件和 IP 地址与已知垃圾邮件发送者的数据库进行比较,并将用户本身是垃圾邮件发送者的置信度评分分配在 0 到 100 "
@@ -738,7 +738,7 @@ msgstr "由本论坛发送的电子邮件末尾的短消息。（可选）"
 #: conf/admin/forms/general.py:109
 #, python-format
 msgid ""
-"Misago uses this setting to build links in e-mails sent to site users. "
+"Kaopu uses this setting to build links in e-mails sent to site users. "
 "Address under which site is running appears to be \"%(address)s\"."
 msgstr "系统使用此设置创建发送给用户邮件中的正确连接。当前站点的正确链接似乎是 “%(address)s”。"
 
@@ -761,7 +761,7 @@ msgstr "公钥"
 
 #: conf/admin/forms/sso.py:24 conf/admin/forms/sso.py:32
 msgid ""
-"Leave this field empty for Misago to generate this key on form submission."
+"Leave this field empty for Kaopu to generate this key on form submission."
 msgstr "留空将自动生成密钥。"
 
 #: conf/admin/forms/sso.py:30
@@ -1153,14 +1153,14 @@ msgid "Uploaded image is not a square."
 msgstr "上传的图片不是正方形。"
 
 #: graphql/admin/versioncheck.py:27
-msgid "The site is running using unreleased version of Misago."
-msgstr "该网站正在使用未发布的 Misago 版本。"
+msgid "The site is running using unreleased version of Kaopu."
+msgstr "该网站正在使用未发布的 Kaopu 版本。"
 
 #: graphql/admin/versioncheck.py:29
 msgid ""
-"Unreleased versions of Misago can lack security features and there is no "
+"Unreleased versions of Kaopu can lack security features and there is no "
 "supported way to upgrade them to release versions later."
-msgstr "未发布 Misago 版本可能包含安全隐患，并且无法保证可以升级到正式版本。"
+msgstr "未发布 Kaopu 版本可能包含安全隐患，并且无法保证可以升级到正式版本。"
 
 #: graphql/admin/versioncheck.py:42
 msgid "Failed to connect to pypi.org API. Try again later."
@@ -1171,28 +1171,28 @@ msgstr "访问 pypi.org API 失败，请稍候尝试。"
 #: templates/misago/admin/dashboard/index.html:33
 msgid ""
 "Version check feature relies on the API operated by the Python Package Index"
-" (pypi.org) API to retrieve latest Misago release version."
-msgstr "版本检查功能依赖于由 Python 包索引 (pypi. org) 的 API 来检索最新的 Misago 版本。"
+" (pypi.org) API to retrieve latest Kaopu release version."
+msgstr "版本检查功能依赖于由 Python 包索引 (pypi. org) 的 API 来检索最新的 Kaopu 版本。"
 
 #: graphql/admin/versioncheck.py:70
-msgid "The site is running updated version of Misago."
-msgstr "该网站正在运行 Misago 的最新版本。"
+msgid "The site is running updated version of Kaopu."
+msgstr "该网站正在运行 Kaopu 的最新版本。"
 
 #: graphql/admin/versioncheck.py:71
 #, python-format
-msgid "Misago %(version)s is latest release."
-msgstr "Misago %(version)s 是最新版本。"
+msgid "Kaopu %(version)s is latest release."
+msgstr "Kaopu %(version)s 是最新版本。"
 
 #: graphql/admin/versioncheck.py:77
-msgid "The site is running outdated version of Misago."
-msgstr "该网站正在运行旧版本的 Misago。"
+msgid "The site is running outdated version of Kaopu."
+msgstr "该网站正在运行旧版本的 Kaopu"
 
 #: graphql/admin/versioncheck.py:79
 #, python-format
 msgid ""
-"The site is running Misago version %(version)s while version %(latest)s is "
+"The site is running Kaopu version %(version)s while version %(latest)s is "
 "available."
-msgstr "该网站正在运行 Misago 版本是 %(version)s ，而当前最新版本是 %(latest)s 。"
+msgstr "该网站正在运行 Kaopu 版本是 %(version)s ，而当前最新版本是 %(latest)s 。"
 
 #: icons/admin/__init__.py:15
 msgid "Icons"
@@ -1259,7 +1259,7 @@ msgstr "设为启用的类型"
 #: legal/admin/forms.py:20
 msgid ""
 "If other agreement is already active for this type, it will be unset and "
-"replaced with this one. Misago will ask users who didn't accept this "
+"replaced with this one. Kaopu will ask users who didn't accept this "
 "agreement to do so before allowing them to continue using the site."
 msgstr "如果此类型存在已启用的协议，那么将强制替换成此协议。并且系统将强制要求所有用户接受此协议，然后才能继续使用网站服务。"
 
@@ -1978,8 +1978,8 @@ msgid "Are you sure you want to remove this ban?"
 msgstr "确认移除此封禁？"
 
 #: templates/misago/admin/base.html:7 templates/misago/admin/login.html:6
-msgid "Misago Administration"
-msgstr "Misago 管理"
+msgid "Kaopu Administration"
+msgstr "Kaopu 管理"
 
 #: templates/misago/admin/categories/delete.html:6
 #, python-format
@@ -2240,7 +2240,7 @@ msgstr "系统检查"
 
 #: templates/misago/admin/dashboard/checks.html:16
 #: templates/misago/admin/dashboard/index.html:32
-msgid "Checking Misago version used by the site..."
+msgid "Checking Kaopu version used by the site..."
 msgstr "检查此站点的版本信息。。。"
 
 #: templates/misago/admin/dashboard/checks.html:30
@@ -2258,7 +2258,7 @@ msgid "Forum address is not configured."
 msgstr "未配置论坛地址。"
 
 #: templates/misago/admin/dashboard/checks.html:49
-msgid "Links in e-mails sent by Misago will be broken."
+msgid "Links in e-mails sent by Kaopu will be broken."
 msgstr "系统发送给用户邮件中的链接将无效。"
 
 #: templates/misago/admin/dashboard/checks.html:69
@@ -2324,8 +2324,8 @@ msgid "Version check is currently unavailable due to an error."
 msgstr "由于出现错误，版本检查当前不可用。"
 
 #: templates/misago/admin/dashboard/index.html:29
-msgid "Misago admin API did not answer or answered with an error."
-msgstr "Misago 管理 API 未响应或者发生错误。"
+msgid "Kaopu admin API did not answer or answered with an error."
+msgstr "Kaopu 管理 API 未响应或者发生错误。"
 
 #: templates/misago/admin/dashboard/index.html:42
 msgid "User registrations"
@@ -4628,8 +4628,8 @@ msgid "CSS link \"%(name)s\" has been updated."
 msgstr "已更新 CSS 链接 \"%(name)s\"。"
 
 #: themes/models.py:40
-msgid "Default Misago Theme"
-msgstr "Misago 默认主题"
+msgid "Default Kaopu Theme"
+msgstr "Kaopu 默认主题"
 
 #: threads/admin/__init__.py:45
 msgid "Attachment types"
@@ -6596,16 +6596,16 @@ msgid "Ranks"
 msgstr "级别"
 
 #: users/admin/djangoadmin.py:42
-msgid "Misago user data"
-msgstr "Misago 用户数据"
+msgid "Kaopu user data"
+msgstr "Kaopu 用户数据"
 
 #: users/admin/djangoadmin.py:56
 msgid "Edit permissions and groups"
 msgstr "编辑权限和组"
 
 #: users/admin/djangoadmin.py:76
-msgid "Edit the user from Misago admin panel"
-msgstr "在 Misago 管理面版编辑用户"
+msgid "Edit the user from Kaopu admin panel"
+msgstr "在 Kaopu 管理面版编辑用户"
 
 #: users/admin/forms.py:22 users/admin/forms.py:313 users/models/ban.py:71
 #: users/signals.py:29

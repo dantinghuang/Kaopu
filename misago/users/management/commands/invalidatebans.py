@@ -8,7 +8,7 @@ from ...models import Ban, BanCache
 
 class Command(BaseCommand):
     help = (
-        "Runs maintenance on Misago bans system, "
+        "Runs maintenance on Kaopu bans system, "
         "invalidating expired bans and pruning caches."
     )
 

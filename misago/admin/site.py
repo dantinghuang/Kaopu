@@ -105,7 +105,7 @@ class AdminSite:
             iterations += 1
             if iterations > 512:
                 message = (
-                    "Misago Admin hierarchy is invalid or too complex to resolve. "
+                    "Kaopu Admin hierarchy is invalid or too complex to resolve. "
                     "Nodes left: %s"
                 )
                 raise ValueError(message % self.nodes_record)
@@ -152,7 +152,7 @@ class AdminSite:
     ):
         if self.nodes_dict:
             raise RuntimeError(
-                "Misago admin site has already been initialized. "
+                "Kaopu admin site has already been initialized. "
                 "You can't add new nodes to it."
             )
 

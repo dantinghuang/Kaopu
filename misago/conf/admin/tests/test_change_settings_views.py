@@ -66,7 +66,7 @@ def test_view_handles_invalid_post_request(rf, setting):
     view(rf.post("/", {"invalid_setting": ""}))
 
     setting.refresh_from_db()
-    assert setting.value == "Misago"
+    assert setting.value == "Kaopu"
 
 
 def test_view_invalidates_settings_cache_on_correct_post_request(rf, setting):

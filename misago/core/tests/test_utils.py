@@ -19,7 +19,7 @@ from ..utils import (
 class IsRequestToMisagoTests(TestCase):
     def test_is_request_to_misago(self):
         """
-        is_request_to_misago correctly detects requests directed at Misago
+        is_request_to_misago correctly detects requests directed at Kaopu
         """
         VALID_PATHS = ("/", "/threads/")
         INVALID_PATHS = ("", "somewhere/")
@@ -45,7 +45,7 @@ class IsRequestToMisagoTests(TestCase):
 
 class SlugifyTests(TestCase):
     def test_valid_slugify_output(self):
-        """Misago's slugify correctly slugifies string"""
+        """Kaopu's slugify correctly slugifies string"""
         test_cases = [
             ("User", "user"),
             ("Eric The Fish", "eric-the-fish"),

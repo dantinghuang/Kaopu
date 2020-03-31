@@ -76,11 +76,11 @@ def raise_misago_banned(request):
 
 
 def raise_misago_403(request):
-    raise PermissionDenied("Misago 403")
+    raise PermissionDenied("Kaopu 403")
 
 
 def raise_misago_404(request):
-    raise Http404("Misago 404")
+    raise Http404("Kaopu 404")
 
 
 def raise_misago_405(request):

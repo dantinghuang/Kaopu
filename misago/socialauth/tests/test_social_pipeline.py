@@ -609,7 +609,7 @@ class GetUsernameTests(PipelineTestCase):
         """pipeline will not resolve to banned name"""
         strategy = create_strategy()
         Ban.objects.create(banned_value="*Admin*", check_type=Ban.USERNAME)
-        details = {"username": "Misago Admin", "first_name": "Błob"}
+        details = {"username": "Kaopu Admin", "first_name": "Błob"}
         result = get_username(strategy, details, None)
         self.assertEqual(result, {"clean_username": "Blob"})
 
@@ -617,7 +617,7 @@ class GetUsernameTests(PipelineTestCase):
         """pipeline will resolve to full name"""
         strategy = create_strategy()
         Ban.objects.create(banned_value="*Admin*", check_type=Ban.USERNAME)
-        details = {"username": "Misago Admin", "full_name": "Błob Błopo"}
+        details = {"username": "Kaopu Admin", "full_name": "Błob Błopo"}
         result = get_username(strategy, details, None)
         self.assertEqual(result, {"clean_username": "BlobBlopo"})
 

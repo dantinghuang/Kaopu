@@ -49,7 +49,7 @@ export default class extends Form {
     form.append('<input type="password" name="password" />')
 
     // fill out form with user credentials and submit it, this will tell
-    // Misago to redirect user back to right page, and will trigger browser's
+    // Kaopu to redirect user back to right page, and will trigger browser's
     // key ring feature
     form.find('input[type="hidden"]').val(ajax.getCsrfToken())
     form.find('input[name="redirect_to"]').val(window.location.pathname)

@@ -8,4 +8,4 @@ class MisagoSSOConfig(AppConfig):
 
     name = "misago.sso"
     label = "misago_sso"
-    verbose_name = "Misago Single Sign On"
+    verbose_name = "Kaopu Single Sign On"

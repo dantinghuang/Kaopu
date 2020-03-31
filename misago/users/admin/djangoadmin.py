@@ -7,9 +7,9 @@ from django.utils.translation import gettext as _
 class UserAdminModel(ModelAdmin):
     """
     The model should be used for interaction of third party django apps with
-    Misago's `User`.
+    Kaopu's `User`.
 
-    Removes `new` and `delete` actions (use Misago admin for that).
+    Removes `new` and `delete` actions (use Kaopu admin for that).
 
     Registration call is placed in :mod:`misago.users.admin`.
     The tests are in :mod:`misago.users.tests.test_djangoadmin_user`.
@@ -39,7 +39,7 @@ class UserAdminModel(ModelAdmin):
     )
     fieldsets = (
         (
-            _("Misago user data"),
+            _("Kaopu user data"),
             {
                 "fields": (
                     "username",
@@ -73,5 +73,5 @@ class UserAdminModel(ModelAdmin):
         )
 
     get_edit_from_misago_url.short_description = _(
-        "Edit the user from Misago admin panel"
+        "Edit the user from Kaopu admin panel"
     )

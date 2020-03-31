@@ -1,7 +1,7 @@
 {
   "name": "misago",
   "version": "0.1.0",
-  "description": "Misago Frontend",
+  "description": "Kaopu Frontend",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"

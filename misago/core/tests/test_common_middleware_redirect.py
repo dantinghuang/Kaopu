@@ -4,7 +4,7 @@ from ...users.test import AuthenticatedUserTestCase
 class CommonMiddlewareRedirectTests(AuthenticatedUserTestCase):
     def test_slashless_redirect(self):
         """
-        Regression test for https://github.com/rafalp/Misago/issues/450
+        Regression test for https://github.com/rafalp/Kaopu/issues/450
 
         there shouldn't be crash when request path lacks trailing slash
         """

@@ -1,5 +1,5 @@
-# This compose setup is only meant for local development of Misago itself
-# This is not for running your Misago site in docker
+# This compose setup is only meant for local development of Kaopu itself
+# This is not for running your Kaopu site in docker
 version: "3.0"
 services:
   postgres:

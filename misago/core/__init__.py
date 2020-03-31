@@ -16,7 +16,7 @@ def check_db_engine(app_configs, **kwargs):
             raise ValueError()
     except (AttributeError, KeyError, ValueError):
         errors.append(
-            Critical(msg="Misago requires PostgreSQL database.", id="misago.001")
+            Critical(msg="Kaopu requires PostgreSQL database.", id="misago.001")
         )
 
     return errors

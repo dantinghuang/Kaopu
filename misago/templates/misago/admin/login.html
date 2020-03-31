@@ -3,7 +3,7 @@
 
 
 {% block title %}
-  {% trans "Log in" %} | {% if target == "django" %}{% trans "Django Administration" %}{% else %}{% trans "Misago Administration" %}{% endif %}
+  {% trans "Log in" %} | {% if target == "django" %}{% trans "Django Administration" %}{% else %}{% trans "Kaopu Administration" %}{% endif %}
 {% endblock %}
 
 
@@ -13,7 +13,7 @@
     {% csrf_token %}
     <div class="login-form-logo">
       {% if target == "misago" %}
-        <img src="{% static 'misago/admin/img/misago.png' %}" alt="Misago">
+        <img src="{% static 'misago/admin/img/misago.png' %}" alt="Kaopu">
       {% elif target == "django" %}
         <img src="{% static 'misago/admin/img/django.png' %}" alt="Django">
       {% endif  %}

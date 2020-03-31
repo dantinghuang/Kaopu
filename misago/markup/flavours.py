@@ -5,7 +5,7 @@ def common(request, poster, text, allow_mentions=True, force_shva=False):
     """
     Common flavour
 
-    Used in places where full Misago flavour is desired
+    Used in places where full Kaopu flavour is desired
 
     Breaks text into paragraphs, supports code, spoiler and quote blocks,
     headers, lists, images, spoilers, text styles

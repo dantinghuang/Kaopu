@@ -107,8 +107,8 @@ msgid "Private threads moderator"
 msgstr "Moderador de tópicos privados"
 
 #: acl/panels.py:8
-msgid "Misago User ACL"
-msgstr "ACL do usuário Misago"
+msgid "Kaopu User ACL"
+msgstr "ACL do usuário Kaopu"
 
 #: acl/panels.py:17
 msgid "Anonymous user"
@@ -512,7 +512,7 @@ msgstr "Inscrição única"
 
 #: conf/admin/__init__.py:78
 msgid ""
-"SSO enables you to delegate user login and registration from Misago tothe "
+"SSO enables you to delegate user login and registration from Kaopu tothe "
 "third party site."
 msgstr ""
 "SSO permite você delegar o login e o registro de usuário a partir do misago "
@@ -622,10 +622,10 @@ msgstr "Validar novos registros no banco de dados SFS"
 
 #: conf/admin/forms/captcha.py:54
 msgid ""
-"Turning this option on will result in Misago validating new user's e-mail "
+"Turning this option on will result in Kaopu validating new user's e-mail "
 "and IP address against SFS database."
 msgstr ""
-"Ativar essa opção resultará no Misago validando novos e-mails de usuário e "
+"Ativar essa opção resultará no Kaopu validando novos e-mails de usuário e "
 "endereços de IP contra o banco de dados SFS."
 
 #: conf/admin/forms/captcha.py:59
@@ -636,13 +636,13 @@ msgstr "É necessária a confidência mínima de SFS"
 msgid ""
 "SFS compares user e-mail and IP address with database of known spammers and "
 "assigns the confidence score in range of 0 to 100 that user is a spammer "
-"themselves. If this score is equal or higher than specified, Misago will "
+"themselves. If this score is equal or higher than specified, Kaopu will "
 "block user from registering and ban their IP address for 24 hours."
 msgstr ""
 "O SFS compara o endereço de e-mail do usuário com o banco de dados de "
 "spammers conhecidos e atribui a pontuação confidencial numa escala de 0 a "
 "100 que o usuário é um spammer por si próprio. Se essa pontuação for igual "
-"ou maior que o especificado, o Misago bloqueará o usuário de se registrar e "
+"ou maior que o especificado, o Kaopu bloqueará o usuário de se registrar e "
 "banirá seu endereço de IP por 24 horas."
 
 #: conf/admin/forms/captcha.py:79
@@ -789,10 +789,10 @@ msgstr ""
 #: conf/admin/forms/general.py:109
 #, python-format
 msgid ""
-"Misago uses this setting to build links in e-mails sent to site users. "
+"Kaopu uses this setting to build links in e-mails sent to site users. "
 "Address under which site is running appears to be \"%(address)s\"."
 msgstr ""
-"Misago usa esta configuração para construir links em e-mails enviados para "
+"Kaopu usa esta configuração para construir links em e-mails enviados para "
 "usuários do site. O endereço no qual o site está executando aparece como "
 "\"%(address)s\"."
 
@@ -818,7 +818,7 @@ msgstr "Chave pública"
 
 #: conf/admin/forms/sso.py:24 conf/admin/forms/sso.py:32
 msgid ""
-"Leave this field empty for Misago to generate this key on form submission."
+"Leave this field empty for Kaopu to generate this key on form submission."
 msgstr ""
 "Deixe este campo em branco para que o misago gere esta chave na submissão de"
 " formulário."
@@ -1257,15 +1257,15 @@ msgid "Uploaded image is not a square."
 msgstr "A imagem enviada não é um quadrado."
 
 #: graphql/admin/versioncheck.py:27
-msgid "The site is running using unreleased version of Misago."
-msgstr "Este site é executado usando a versão não lançada do Misago."
+msgid "The site is running using unreleased version of Kaopu."
+msgstr "Este site é executado usando a versão não lançada do Kaopu."
 
 #: graphql/admin/versioncheck.py:29
 msgid ""
-"Unreleased versions of Misago can lack security features and there is no "
+"Unreleased versions of Kaopu can lack security features and there is no "
 "supported way to upgrade them to release versions later."
 msgstr ""
-"Versões não lançadas do Misago podem carecer de funções de segurança e não "
+"Versões não lançadas do Kaopu podem carecer de funções de segurança e não "
 "há forma suportada de atualizá-las para lançar versões posteriores."
 
 #: graphql/admin/versioncheck.py:42
@@ -1277,32 +1277,32 @@ msgstr "Falha ao se conectar ao pypi.org API. Tente mais tarde"
 #: templates/misago/admin/dashboard/index.html:33
 msgid ""
 "Version check feature relies on the API operated by the Python Package Index"
-" (pypi.org) API to retrieve latest Misago release version."
+" (pypi.org) API to retrieve latest Kaopu release version."
 msgstr ""
 "A função de verificação de versão depende da API operada pelo Python Package"
-" Index (pypi.org) API para obter a última versão lançada do Misago."
+" Index (pypi.org) API para obter a última versão lançada do Kaopu."
 
 #: graphql/admin/versioncheck.py:70
-msgid "The site is running updated version of Misago."
-msgstr "O site está sendo executado usando uma versão atualizada do Misago."
+msgid "The site is running updated version of Kaopu."
+msgstr "O site está sendo executado usando uma versão atualizada do Kaopu."
 
 #: graphql/admin/versioncheck.py:71
 #, python-format
-msgid "Misago %(version)s is latest release."
-msgstr "O Misago %(version)s é o último lançamento. "
+msgid "Kaopu %(version)s is latest release."
+msgstr "O Kaopu %(version)s é o último lançamento. "
 
 #: graphql/admin/versioncheck.py:77
-msgid "The site is running outdated version of Misago."
+msgid "The site is running outdated version of Kaopu."
 msgstr ""
-"O site está sendo executado usando uma versão desatualizada do Misago."
+"O site está sendo executado usando uma versão desatualizada do Kaopu."
 
 #: graphql/admin/versioncheck.py:79
 #, python-format
 msgid ""
-"The site is running Misago version %(version)s while version %(latest)s is "
+"The site is running Kaopu version %(version)s while version %(latest)s is "
 "available."
 msgstr ""
-"O site está sendo executado usando a versão %(version)s do Misago, enquanto "
+"O site está sendo executado usando a versão %(version)s do Kaopu, enquanto "
 "a versão %(latest)s está disponível."
 
 #: icons/admin/__init__.py:15
@@ -1374,11 +1374,11 @@ msgstr "Ativo para seu tipo"
 #: legal/admin/forms.py:20
 msgid ""
 "If other agreement is already active for this type, it will be unset and "
-"replaced with this one. Misago will ask users who didn't accept this "
+"replaced with this one. Kaopu will ask users who didn't accept this "
 "agreement to do so before allowing them to continue using the site."
 msgstr ""
 "Se outros acordos já estiverem ativos para este tipo, ele será desativado e "
-"substituído com este. Misago irá pedir para os usuários que não aceitarem "
+"substituído com este. Kaopu irá pedir para os usuários que não aceitarem "
 "este acordo para o fazê-lo antes de permitir que eles continuem usando o "
 "site. "
 
@@ -2125,8 +2125,8 @@ msgid "Are you sure you want to remove this ban?"
 msgstr "Você tem certeza que deseja remover este banimento?"
 
 #: templates/misago/admin/base.html:7 templates/misago/admin/login.html:6
-msgid "Misago Administration"
-msgstr "Administração do Misago"
+msgid "Kaopu Administration"
+msgstr "Administração do Kaopu"
 
 #: templates/misago/admin/categories/delete.html:6
 #, python-format
@@ -2389,8 +2389,8 @@ msgstr "Verificação do sistema"
 
 #: templates/misago/admin/dashboard/checks.html:16
 #: templates/misago/admin/dashboard/index.html:32
-msgid "Checking Misago version used by the site..."
-msgstr "Verificar a versão do Misago usada pelo site..."
+msgid "Checking Kaopu version used by the site..."
+msgstr "Verificar a versão do Kaopu usada pelo site..."
 
 #: templates/misago/admin/dashboard/checks.html:30
 msgid "The site is running in DEBUG mode."
@@ -2410,8 +2410,8 @@ msgid "Forum address is not configured."
 msgstr "O endereço do fórum não está configurado."
 
 #: templates/misago/admin/dashboard/checks.html:49
-msgid "Links in e-mails sent by Misago will be broken."
-msgstr "Links em e-mails enviados pelo Misago serão quebrados."
+msgid "Links in e-mails sent by Kaopu will be broken."
+msgstr "Links em e-mails enviados pelo Kaopu serão quebrados."
 
 #: templates/misago/admin/dashboard/checks.html:69
 msgid "Configured forum address appears to be incorrect."
@@ -2428,7 +2428,7 @@ msgstr ""
 
 #: templates/misago/admin/dashboard/checks.html:82
 msgid "Links in e-mails sentby Misagoill be broken."
-msgstr "Links em e-mails enviados pelo Misago serão quebrados."
+msgstr "Links em e-mails enviados pelo Kaopu serão quebrados."
 
 #: templates/misago/admin/dashboard/checks.html:102
 msgid "The site is not running over HTTPS."
@@ -2490,9 +2490,9 @@ msgid "Version check is currently unavailable due to an error."
 msgstr "A verificação de versão atualmente está indisponível devido um erro."
 
 #: templates/misago/admin/dashboard/index.html:29
-msgid "Misago admin API did not answer or answered with an error."
+msgid "Kaopu admin API did not answer or answered with an error."
 msgstr ""
-"A API administrativa do Misago não responde ou é respondida com um erro."
+"A API administrativa do Kaopu não responde ou é respondida com um erro."
 
 #: templates/misago/admin/dashboard/index.html:42
 msgid "User registrations"
@@ -4950,8 +4950,8 @@ msgid "CSS link \"%(name)s\" has been updated."
 msgstr "O link CSS \"%(name)s\" foi atualizado."
 
 #: themes/models.py:40
-msgid "Default Misago Theme"
-msgstr "Tema padrão do Misago."
+msgid "Default Kaopu Theme"
+msgstr "Tema padrão do Kaopu."
 
 #: threads/admin/__init__.py:45
 msgid "Attachment types"
@@ -7141,16 +7141,16 @@ msgid "Ranks"
 msgstr "Ranks"
 
 #: users/admin/djangoadmin.py:42
-msgid "Misago user data"
-msgstr "Dados de usuário do Misago"
+msgid "Kaopu user data"
+msgstr "Dados de usuário do Kaopu"
 
 #: users/admin/djangoadmin.py:56
 msgid "Edit permissions and groups"
 msgstr "Editar permissões e grupos"
 
 #: users/admin/djangoadmin.py:76
-msgid "Edit the user from Misago admin panel"
-msgstr "Editar o usuário a partir do painel administrativo do Misago"
+msgid "Edit the user from Kaopu admin panel"
+msgstr "Editar o usuário a partir do painel administrativo do Kaopu"
 
 #: users/admin/forms.py:22 users/admin/forms.py:313 users/models/ban.py:71
 #: users/signals.py:29

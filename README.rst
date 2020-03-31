@@ -1,21 +1,21 @@
 ======
-Misago
+Kaopu
 ======
 
-.. image:: https://travis-ci.org/rafalp/Misago.svg?branch=master
-   :target: https://travis-ci.org/rafalp/Misago
+.. image:: https://travis-ci.org/rafalp/Kaopu.svg?branch=master
+   :target: https://travis-ci.org/rafalp/Kaopu
    :alt: Tests Result
 
-.. image:: https://coveralls.io/repos/github/rafalp/Misago/badge.svg?branch=master
-   :target: https://coveralls.io/github/rafalp/Misago?branch=master
+.. image:: https://coveralls.io/repos/github/rafalp/Kaopu/badge.svg?branch=master
+   :target: https://coveralls.io/github/rafalp/Kaopu?branch=master
    :alt: Test Coverage
 
 .. image:: https://img.shields.io/badge/release-0.26.0-brightgreen.svg
-   :target: https://pypi.org/project/Misago/
+   :target: https://pypi.org/project/Kaopu/
    :alt: Release 0.26.0
 
 .. image:: https://img.shields.io/badge/python-3.7-blue.svg
-   :target: https://travis-ci.org/rafalp/Misago
+   :target: https://travis-ci.org/rafalp/Kaopu
    :alt: Works on Python 3.7
 
 .. image:: https://img.shields.io/badge/chat-on_discord-7289da.svg
@@ -25,11 +25,11 @@ Misago
 
 **Development Status:** 🍌 `Bananas <https://en.wikipedia.org/wiki/Perpetual_beta>`_ 🍌
 
-Misago aims to be complete, featured and modern forum solution that has no fear to say 'NO' to common and outdated opinions about how forum software should be made and what it should do.
+Kaopu aims to be complete, featured and modern forum solution that has no fear to say 'NO' to common and outdated opinions about how forum software should be made and what it should do.
 
 * **Homepage:** http://misago-project.org/
 * **Documentation:** https://misago.gitbook.io/docs/
-* **Code & BugTracker:** https://github.com/rafalp/Misago/
+* **Code & BugTracker:** https://github.com/rafalp/Kaopu/
 
 
 Screenshots
@@ -47,7 +47,7 @@ Screenshots
 Production use
 ==============
 
-As of now Misago implements all features considered "must have" on live internet forum:
+As of now Kaopu implements all features considered "must have" on live internet forum:
 
 * Your users may register accounts, set avatars, change options and edit their profiles. They have option to reset forgotten password.
 * Sign in with Facebook, Google, Github, Steam, Blizzard.net or any other over 50 supported OAuth providers.
@@ -82,18 +82,18 @@ Even more features will follow in future releases:
 Development
 ===========
 
-Preferred way to run Misago development instances on your machine is with `Docker <https://www.docker.com/community-edition#/download>`_, which makes it easy to spin up arbitrary number of instances running different code with separate databases and dependencies besides each other.
+Preferred way to run Kaopu development instances on your machine is with `Docker <https://www.docker.com/community-edition#/download>`_, which makes it easy to spin up arbitrary number of instances running different code with separate databases and dependencies besides each other.
 
 To start, clone the repository and run ``./dev init`` command in your terminal. This will build necessary docker containers, install python dependencies and initialize the database. After command does its magic, you will be able to start development server using the ``docker-compose up`` command.
 
-After development server starts, visit the ``http://127.0.0.1:8000/`` in your browser to see your Misago installation.
+After development server starts, visit the ``http://127.0.0.1:8000/`` in your browser to see your Kaopu installation.
 
 Admin Control Panel is available under the ``http://127.0.0.1:8000/admincp/`` address. To log in to it use ``Admin`` username and ``password`` password.
 
 The ``./dev`` utility implements other features besides the ``init``. Run it without any arguments to get the list of available actions.
 
 
-Running Misago in development without `dev`
+Running Kaopu in development without `dev`
 -------------------------------------------
 
 You may skip `./dev init` and setup dev instance manually, running those commands:
@@ -107,26 +107,26 @@ You may skip `./dev init` and setup dev instance manually, running those command
 Frontend
 --------
 
-With exception of Admin Panel, Misago frontend relies heavily on React.js components backed by Django API. This application relies on custom Gulp.js-based toolkit for development. As of current, Misago's ``gulpfile.js`` defines following tasks:
+With exception of Admin Panel, Kaopu frontend relies heavily on React.js components backed by Django API. This application relies on custom Gulp.js-based toolkit for development. As of current, Kaopu's ``gulpfile.js`` defines following tasks:
 
-* **build** does production build of Misago's assets, concating and minifying javascripts, css and images, as well as moving them to misago/static directory
+* **build** does production build of Kaopu's assets, concating and minifying javascripts, css and images, as well as moving them to misago/static directory
 * **watch** does quick build for assets (concat assets into single files, compile less, deploy to misago/static but don't minify/optimize) as well as runs re-build when less/js changes
 * **watchstyle** does quick build of less files, and re-builds them when they change
-* **test** runs Mocha.js tests suite for Misago's javascript
+* **test** runs Mocha.js tests suite for Kaopu's javascript
 
-To start work on custom frontend for Misago, fork and install it locally to have development forum setup. You can now develop custom theme by modifing assets in ``frontend`` directory, however special care should be taken when changing source javascripts.
+To start work on custom frontend for Kaopu, fork and install it locally to have development forum setup. You can now develop custom theme by modifing assets in ``frontend`` directory, however special care should be taken when changing source javascripts.
 
-Misago defines template that allows you to include custom html and js code before Misago's JavaScript app is ran, named **scripts.html**.
+Kaopu defines template that allows you to include custom html and js code before Kaopu's JavaScript app is ran, named **scripts.html**.
 
 
 Bug reports, features and feedback
 ==================================
 
-If you have found bug, please report it on `issue tracker <https://github.com/rafalp/Misago/issues>`_.
+If you have found bug, please report it on `issue tracker <https://github.com/rafalp/Kaopu/issues>`_.
 
 For feature or support requests as well as general feedback please use `official forum <http://misago-project.org>`_ instead. Your feedback means much to the project so please do share your thoughts!
 
-There's also Gitter for those looking for instant-messaging approach for discussing Misago development.
+There's also Gitter for those looking for instant-messaging approach for discussing Kaopu development.
 
 
 Contributing
@@ -153,7 +153,7 @@ English sentences used within ``misago.faker.phrases`` were extracted from `Nati
 Copyright and license
 =====================
 
-**Misago** - Copyright © 2018 `Rafał Pitoń <http://github.com/rafalp>`_
+**Kaopu** - Copyright © 2018 `Rafał Pitoń <http://github.com/rafalp>`_
 This program comes with ABSOLUTELY NO WARRANTY.
 
 This is free software and you are welcome to modify and redistribute it under the conditions described in the license.

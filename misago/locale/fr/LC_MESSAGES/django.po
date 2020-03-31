@@ -112,8 +112,8 @@ msgid "Private threads moderator"
 msgstr "Modérateur des fils de discussion privés"
 
 #: acl/panels.py:8
-msgid "Misago User ACL"
-msgstr "ACL utilisateur Misago"
+msgid "Kaopu User ACL"
+msgstr "ACL utilisateur Kaopu"
 
 #: acl/panels.py:17
 msgid "Anonymous user"
@@ -517,7 +517,7 @@ msgstr ""
 
 #: conf/admin/__init__.py:78
 msgid ""
-"SSO enables you to delegate user login and registration from Misago tothe "
+"SSO enables you to delegate user login and registration from Kaopu tothe "
 "third party site."
 msgstr ""
 
@@ -621,7 +621,7 @@ msgstr ""
 
 #: conf/admin/forms/captcha.py:54
 msgid ""
-"Turning this option on will result in Misago validating new user's e-mail "
+"Turning this option on will result in Kaopu validating new user's e-mail "
 "and IP address against SFS database."
 msgstr ""
 
@@ -633,7 +633,7 @@ msgstr ""
 msgid ""
 "SFS compares user e-mail and IP address with database of known spammers and "
 "assigns the confidence score in range of 0 to 100 that user is a spammer "
-"themselves. If this score is equal or higher than specified, Misago will "
+"themselves. If this score is equal or higher than specified, Kaopu will "
 "block user from registering and ban their IP address for 24 hours."
 msgstr ""
 
@@ -764,7 +764,7 @@ msgstr ""
 #: conf/admin/forms/general.py:109
 #, python-format
 msgid ""
-"Misago uses this setting to build links in e-mails sent to site users. "
+"Kaopu uses this setting to build links in e-mails sent to site users. "
 "Address under which site is running appears to be \"%(address)s\"."
 msgstr ""
 
@@ -786,7 +786,7 @@ msgstr ""
 
 #: conf/admin/forms/sso.py:24 conf/admin/forms/sso.py:32
 msgid ""
-"Leave this field empty for Misago to generate this key on form submission."
+"Leave this field empty for Kaopu to generate this key on form submission."
 msgstr ""
 
 #: conf/admin/forms/sso.py:30
@@ -1179,12 +1179,12 @@ msgid "Uploaded image is not a square."
 msgstr ""
 
 #: graphql/admin/versioncheck.py:27
-msgid "The site is running using unreleased version of Misago."
+msgid "The site is running using unreleased version of Kaopu."
 msgstr ""
 
 #: graphql/admin/versioncheck.py:29
 msgid ""
-"Unreleased versions of Misago can lack security features and there is no "
+"Unreleased versions of Kaopu can lack security features and there is no "
 "supported way to upgrade them to release versions later."
 msgstr ""
 
@@ -1197,26 +1197,26 @@ msgstr ""
 #: templates/misago/admin/dashboard/index.html:33
 msgid ""
 "Version check feature relies on the API operated by the Python Package Index"
-" (pypi.org) API to retrieve latest Misago release version."
+" (pypi.org) API to retrieve latest Kaopu release version."
 msgstr ""
 
 #: graphql/admin/versioncheck.py:70
-msgid "The site is running updated version of Misago."
+msgid "The site is running updated version of Kaopu."
 msgstr ""
 
 #: graphql/admin/versioncheck.py:71
 #, python-format
-msgid "Misago %(version)s is latest release."
+msgid "Kaopu %(version)s is latest release."
 msgstr ""
 
 #: graphql/admin/versioncheck.py:77
-msgid "The site is running outdated version of Misago."
+msgid "The site is running outdated version of Kaopu."
 msgstr ""
 
 #: graphql/admin/versioncheck.py:79
 #, python-format
 msgid ""
-"The site is running Misago version %(version)s while version %(latest)s is "
+"The site is running Kaopu version %(version)s while version %(latest)s is "
 "available."
 msgstr ""
 
@@ -1285,7 +1285,7 @@ msgstr ""
 #: legal/admin/forms.py:20
 msgid ""
 "If other agreement is already active for this type, it will be unset and "
-"replaced with this one. Misago will ask users who didn't accept this "
+"replaced with this one. Kaopu will ask users who didn't accept this "
 "agreement to do so before allowing them to continue using the site."
 msgstr ""
 
@@ -2004,8 +2004,8 @@ msgid "Are you sure you want to remove this ban?"
 msgstr "Êtes-vous certain de vouloir supprimer ce bannissement ?"
 
 #: templates/misago/admin/base.html:7 templates/misago/admin/login.html:6
-msgid "Misago Administration"
-msgstr "Administration de Misago"
+msgid "Kaopu Administration"
+msgstr "Administration de Kaopu"
 
 #: templates/misago/admin/categories/delete.html:6
 #, python-format
@@ -2266,7 +2266,7 @@ msgstr ""
 
 #: templates/misago/admin/dashboard/checks.html:16
 #: templates/misago/admin/dashboard/index.html:32
-msgid "Checking Misago version used by the site..."
+msgid "Checking Kaopu version used by the site..."
 msgstr ""
 
 #: templates/misago/admin/dashboard/checks.html:30
@@ -2284,7 +2284,7 @@ msgid "Forum address is not configured."
 msgstr ""
 
 #: templates/misago/admin/dashboard/checks.html:49
-msgid "Links in e-mails sent by Misago will be broken."
+msgid "Links in e-mails sent by Kaopu will be broken."
 msgstr ""
 
 #: templates/misago/admin/dashboard/checks.html:69
@@ -2352,7 +2352,7 @@ msgid "Version check is currently unavailable due to an error."
 msgstr ""
 
 #: templates/misago/admin/dashboard/index.html:29
-msgid "Misago admin API did not answer or answered with an error."
+msgid "Kaopu admin API did not answer or answered with an error."
 msgstr ""
 
 #: templates/misago/admin/dashboard/index.html:42
@@ -4766,7 +4766,7 @@ msgid "CSS link \"%(name)s\" has been updated."
 msgstr ""
 
 #: themes/models.py:40
-msgid "Default Misago Theme"
+msgid "Default Kaopu Theme"
 msgstr ""
 
 #: threads/admin/__init__.py:45
@@ -7055,17 +7055,17 @@ msgid "Ranks"
 msgstr "Rangs"
 
 #: users/admin/djangoadmin.py:42
-msgid "Misago user data"
-msgstr "Données des utilisateurs Misago"
+msgid "Kaopu user data"
+msgstr "Données des utilisateurs Kaopu"
 
 #: users/admin/djangoadmin.py:56
 msgid "Edit permissions and groups"
 msgstr "Modifier les permissions et groupes"
 
 #: users/admin/djangoadmin.py:76
-msgid "Edit the user from Misago admin panel"
+msgid "Edit the user from Kaopu admin panel"
 msgstr ""
-"Modifier l'utilisateur depuis le tableau de bord d'administration Misago"
+"Modifier l'utilisateur depuis le tableau de bord d'administration Kaopu"
 
 #: users/admin/forms.py:22 users/admin/forms.py:313 users/models/ban.py:71
 #: users/signals.py:29

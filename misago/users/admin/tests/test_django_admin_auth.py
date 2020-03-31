@@ -6,7 +6,7 @@ from ....admin.test import AdminTestCase
 
 @override_settings(ROOT_URLCONF="misago.core.testproject.urls")
 class DjangoAdminAuthTests(AdminTestCase):
-    """assertions for Django admin auth interop with Misago User Model"""
+    """assertions for Django admin auth interop with Kaopu User Model"""
 
     def test_login(self):
         """its possible to sign in to django admin"""

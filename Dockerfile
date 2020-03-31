@@ -1,5 +1,5 @@
-# This dockerfile is only meant for local development of Misago
-# If you are looking for a proper docker setup for running Misago in production,
+# This dockerfile is only meant for local development of Kaopu
+# If you are looking for a proper docker setup for running Kaopu in production,
 # please use misago-docker instead
 FROM python:3.7
 

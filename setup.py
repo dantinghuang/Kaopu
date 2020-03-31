@@ -19,11 +19,11 @@ with open(os.path.join(SETUP_DIR, "requirements.txt"), "r") as f:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name="Misago",
+    name="Kaopu",
     version=version,
     license="GPLv2",
     description=(
-        "Misago is modern, fully featured forum application written in "
+        "Kaopu is modern, fully featured forum application written in "
         "Python and ES6, powered by Django and React.js. It works out of "
         "the box and plays nicely with other projects like Django-CMS."
     ),

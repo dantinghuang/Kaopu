@@ -1,6 +1,6 @@
 import OrderedList from "misago/utils/ordered-list"
 
-export class Misago {
+export class Kaopu {
   constructor() {
     this._initializers = []
     this._context = {}
@@ -51,7 +51,7 @@ export class Misago {
 }
 
 // create  singleton
-var misago = new Misago()
+var misago = new Kaopu()
 
 // expose it globally
 global.misago = misago

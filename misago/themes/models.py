@@ -37,7 +37,7 @@ class Theme(MPTTModel):
 
     def __str__(self):
         if self.is_default:
-            return gettext("Default Misago Theme")
+            return gettext("Default Kaopu Theme")
         return self.name
 
     @property

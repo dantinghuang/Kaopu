@@ -39,7 +39,7 @@ DEBUG = True
 # A list of strings representing the host/domain names that this Django site can serve.
 # If you are unsure, just enter here your domain name, eg. ['mysite.com', 'www.mysite.com']
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Database
@@ -47,7 +47,7 @@ ALLOWED_HOSTS = []
 
 DATABASES = {
     "default": {
-        # Misago requires PostgreSQL to run
+        # Kaopu requires PostgreSQL to run
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.environ.get("POSTGRES_DB"),
         "USER": os.environ.get("POSTGRES_USER"),
@@ -63,7 +63,7 @@ DATABASES = {
 
 CACHES = {
     "default": {
-        # Misago doesn't run well with LocMemCache in production environments
+        # Kaopu doesn't run well with LocMemCache in production environments
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache"
     }
 }
@@ -89,7 +89,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "zh-Hans"
 
 TIME_ZONE = "UTC"
 
@@ -162,7 +162,7 @@ PLUGINS_LIST_PATH = os.path.join(os.path.dirname(BASE_DIR), "plugins.txt")
 INSTALLED_PLUGINS = load_plugin_list_if_exists(PLUGINS_LIST_PATH) or []
 
 INSTALLED_APPS = INSTALLED_PLUGINS + [
-    # Misago overrides for Django core feature
+    # Kaopu overrides for Django core feature
     "misago",
     "misago.users",
     # Django apps
@@ -174,14 +174,14 @@ INSTALLED_APPS = INSTALLED_PLUGINS + [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # 3rd party apps used by Misago
+    # 3rd party apps used by Kaopu
     "ariadne.contrib.django",
     "celery",
-    "debug_toolbar",
+    #"debug_toolbar",
     "mptt",
     "rest_framework",
     "social_django",
-    # Misago apps
+    # Kaopu apps
     "misago.admin",
     "misago.acl",
     "misago.analytics",
@@ -213,7 +213,7 @@ LOGIN_URL = "misago:login"
 LOGOUT_URL = "misago:logout"
 
 MIDDLEWARE = [
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    #"debug_toolbar.middleware.DebugToolbarMiddleware",
     "misago.users.middleware.RealIPMiddleware",
     "misago.core.middleware.FrontendContextMiddleware",
     "django.middleware.security.SecurityMiddleware",
@@ -316,20 +316,20 @@ WSGI_APPLICATION = "devproject.wsgi.application"
 # Django Debug Toolbar
 # http://django-debug-toolbar.readthedocs.io/en/stable/configuration.html
 
-DEBUG_TOOLBAR_PANELS = [
-    "debug_toolbar.panels.versions.VersionsPanel",
-    "debug_toolbar.panels.timer.TimerPanel",
-    "debug_toolbar.panels.settings.SettingsPanel",
-    "debug_toolbar.panels.headers.HeadersPanel",
-    "debug_toolbar.panels.request.RequestPanel",
-    "debug_toolbar.panels.sql.SQLPanel",
-    "misago.acl.panels.MisagoACLPanel",
-    "debug_toolbar.panels.staticfiles.StaticFilesPanel",
-    "debug_toolbar.panels.templates.TemplatesPanel",
-    "debug_toolbar.panels.cache.CachePanel",
-    "debug_toolbar.panels.signals.SignalsPanel",
-    "debug_toolbar.panels.logging.LoggingPanel",
-]
+# DEBUG_TOOLBAR_PANELS = [
+#     "debug_toolbar.panels.versions.VersionsPanel",
+#     "debug_toolbar.panels.timer.TimerPanel",
+#     "debug_toolbar.panels.settings.SettingsPanel",
+#     "debug_toolbar.panels.headers.HeadersPanel",
+#     "debug_toolbar.panels.request.RequestPanel",
+#     "debug_toolbar.panels.sql.SQLPanel",
+#     "misago.acl.panels.MisagoACLPanel",
+#     "debug_toolbar.panels.staticfiles.StaticFilesPanel",
+#     "debug_toolbar.panels.templates.TemplatesPanel",
+#     "debug_toolbar.panels.cache.CachePanel",
+#     "debug_toolbar.panels.signals.SignalsPanel",
+#     "debug_toolbar.panels.logging.LoggingPanel",
+# ]
 
 
 # Django Rest Framework
@@ -360,7 +360,7 @@ CELERY_BROKER_URL = "redis://redis:6379/0"
 CELERY_WORKER_MAX_TASKS_PER_CHILD = 10
 
 
-# Misago specific settings
+# Kaopu specific settings
 # https://misago.readthedocs.io/en/latest/developers/settings.html
 
 # On dev instance, generate only three sizes of avatars instead of default 6 sizes.
@@ -378,7 +378,7 @@ MISAGO_AVATARS_SIZES = [400, 200, 100]
 MISAGO_SEARCH_CONFIG = "simple"
 
 
-# Path to the directory that Misago should use to prepare user data downloads.
+# Path to the directory that Kaopu should use to prepare user data downloads.
 # Should not be accessible from internet.
 
 MISAGO_USER_DATA_DOWNLOADS_WORKING_DIR = os.path.join(BASE_DIR, "userdata")
@@ -424,6 +424,6 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # Display debug toolbar if IN_MISAGO_DOCKER enviroment var is set to "1"
 
-DEBUG_TOOLBAR_CONFIG = {
-    "SHOW_TOOLBAR_CALLBACK": "misago.conf.debugtoolbar.enable_debug_toolbar"
-}
+# DEBUG_TOOLBAR_CONFIG = {
+#     "SHOW_TOOLBAR_CALLBACK": "misago.conf.debugtoolbar.enable_debug_toolbar"
+# }

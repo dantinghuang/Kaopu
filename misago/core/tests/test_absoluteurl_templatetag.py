@@ -19,5 +19,5 @@ def test_link_is_reversed_and_prefixed_with_forum_address(context):
 
 
 def test_absolute_url_is_not_changed(context):
-    url = "https://github.com/rafalp/Misago/issues/1067"
+    url = "https://github.com/rafalp/Kaopu/issues/1067"
     assert absoluteurl(context, url) == url

@@ -7,7 +7,7 @@ from .core.views import forum_index
 
 app_name = "misago"
 
-# Register Misago Apps
+# Register Kaopu Apps
 urlpatterns = hooks.urlpatterns + [
     url(r"^", include("misago.analytics.urls")),
     url(r"^", include("misago.legal.urls")),
@@ -24,9 +24,9 @@ urlpatterns = hooks.urlpatterns + [
             content_type="text/plain", template_name="misago/robots.txt"
         ),
     ),
-    # "misago:index" link symbolises "root" of Misago links space
+    # "misago:index" link symbolises "root" of Kaopu links space
     # any request with path that falls below this one is assumed to be directed
-    # at Misago and will be handled by misago.views.exceptionhandler if it
+    # at Kaopu and will be handled by misago.views.exceptionhandler if it
     # results in Http404 or PermissionDenied exception
     url(r"^$", forum_index, name="index"),
 ]
@@ -45,9 +45,9 @@ apipatterns = hooks.apipatterns + [
 urlpatterns += [url(r"^api/", include((apipatterns, "api"), namespace="api"))]
 
 
-# Register Misago ACP
+# Register Kaopu ACP
 if settings.MISAGO_ADMIN_PATH:
-    # Admin patterns recognised by Misago
+    # Admin patterns recognised by Kaopu
     adminpatterns = [url(r"^", include("misago.admin.urls"))]
 
     admin_prefix = r"^%s/" % settings.MISAGO_ADMIN_PATH

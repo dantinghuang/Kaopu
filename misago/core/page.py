@@ -1,6 +1,6 @@
 class Page:
     """
-    Misago page utility
+    Kaopu page utility
 
     Allows for adding custom views to "sectioned" pages like
     User Control Panel, Users List or Threads Lists

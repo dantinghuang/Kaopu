@@ -1,6 +1,6 @@
 from django.conf.urls import include, url
 
-# Setup Django admin to work with Misago auth
+# Setup Django admin to work with Kaopu auth
 from django.contrib import admin
 from django.utils import timezone
 from django.views.decorators.cache import cache_page

@@ -19,7 +19,7 @@ class AgreementForm(forms.ModelForm):
         help_text=_(
             "If other agreement is already active for this type, it will be unset "
             "and replaced with this one. "
-            "Misago will ask users who didn't accept this agreement to do so "
+            "Kaopu will ask users who didn't accept this agreement to do so "
             "before allowing them to continue using the site."
         ),
     )

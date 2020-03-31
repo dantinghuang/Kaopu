@@ -51,7 +51,7 @@ class ChangeCaptchaSettingsForm(ChangeSettingsForm):
     enable_stop_forum_spam = YesNoSwitch(
         label=_("Validate new registrations against SFS database"),
         help_text=_(
-            "Turning this option on will result in Misago validating new user's e-mail "
+            "Turning this option on will result in Kaopu validating new user's e-mail "
             "and IP address against SFS database."
         ),
     )
@@ -61,7 +61,7 @@ class ChangeCaptchaSettingsForm(ChangeSettingsForm):
             "SFS compares user e-mail and IP address with database of known spammers "
             "and assigns the confidence score in range of 0 to 100 that user is a "
             "spammer themselves. If this score is equal or higher than specified, "
-            "Misago will block user from registering and ban their IP address "
+            "Kaopu will block user from registering and ban their IP address "
             "for 24 hours."
         ),
         min_value=0,

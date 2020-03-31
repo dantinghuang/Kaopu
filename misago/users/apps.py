@@ -8,7 +8,7 @@ from .pages import user_profile, usercp, users_list
 class MisagoUsersConfig(AppConfig):
     name = "misago.users"
     label = "misago_users"
-    verbose_name = "Misago Auth"
+    verbose_name = "Kaopu Auth"
 
     def ready(self):
         from . import signals as _

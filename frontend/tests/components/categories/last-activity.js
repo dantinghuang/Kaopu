@@ -72,7 +72,7 @@ describe("Categories List Category Last Activity", function() {
 
   it("renders guest-posted thread", function() {
     let category = {
-      last_thread_title: "Misago Test Thread",
+      last_thread_title: "Kaopu Test Thread",
       last_thread_url: '/test-thread/url-123/',
       last_post_url: '/test-thread/url-123/last/',
 
@@ -114,7 +114,7 @@ describe("Categories List Category Last Activity", function() {
 
   it("renders thread", function() {
     let category = {
-      last_thread_title: "Misago Test Thread",
+      last_thread_title: "Kaopu Test Thread",
       last_thread_url: '/test-thread/url-123/',
       last_post_url: '/test-thread/url-123/last/',
 

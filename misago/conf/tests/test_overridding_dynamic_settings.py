@@ -3,10 +3,10 @@ from ..test import override_dynamic_settings
 
 
 def test_dynamic_setting_can_be_overridden_using_context_manager(dynamic_settings):
-    assert dynamic_settings.forum_name == "Misago"
+    assert dynamic_settings.forum_name == "Kaopu"
     with override_dynamic_settings(forum_name="Overrided"):
         assert dynamic_settings.forum_name == "Overrided"
-    assert dynamic_settings.forum_name == "Misago"
+    assert dynamic_settings.forum_name == "Kaopu"
 
 
 def test_dynamic_setting_can_be_overridden_using_decorator(dynamic_settings):
@@ -14,9 +14,9 @@ def test_dynamic_setting_can_be_overridden_using_decorator(dynamic_settings):
     def decorated_function(settings):
         return settings.forum_name
 
-    assert dynamic_settings.forum_name == "Misago"
+    assert dynamic_settings.forum_name == "Kaopu"
     assert decorated_function(dynamic_settings) == "Overrided"
-    assert dynamic_settings.forum_name == "Misago"
+    assert dynamic_settings.forum_name == "Kaopu"
 
 
 def test_lazy_dynamic_setting_can_be_overridden_using_context_manager(

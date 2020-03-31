@@ -26,7 +26,7 @@ error() {
 
 require_in_docker() {
     if [[ ! $IN_MISAGO_DOCKER = 1 ]]; then
-        error "This command can only be ran inside the running Misago docker container."
+        error "This command can only be ran inside the running Kaopu docker container."
         exit 1
     fi
 }
@@ -86,7 +86,7 @@ intro() {
     echo "Shortcuts:"
     echo
     echo "    ${BOLD}manage.py${NORMAL}         runs \"python manage.py\" inside docker."
-    echo "    ${BOLD}bash${NORMAL}              starts bash session inside running Misago container."
+    echo "    ${BOLD}bash${NORMAL}              starts bash session inside running Kaopu container."
     echo "    ${BOLD}run${NORMAL}               runs \"docker-compose run --rm misago\"."
     echo "    ${BOLD}psql${NORMAL}              runs psql connected to development database."
     echo "    ${BOLD}pyfmt${NORMAL}             runs isort + black on python code."
@@ -112,7 +112,7 @@ init() {
             elif [[ $port = $port_postgresql ]]; then
                 error "PostgreSQL appears to already be running on the port $port."
                 echo
-                echo "Misago runs its own PostgreSQL instance in the docker container and uses port $port to expose it to other programs."
+                echo "Kaopu runs its own PostgreSQL instance in the docker container and uses port $port to expose it to other programs."
                 echo "Please stop your PostgreSQL server and try again."
                 echo
             fi

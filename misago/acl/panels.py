@@ -1,11 +1,11 @@
-from debug_toolbar.panels import Panel
+# from debug_toolbar.panels import Panel
 from django.utils.translation import gettext_lazy as _
 
 
 class MisagoACLPanel(Panel):
     """panel that displays current user's ACL"""
 
-    title = _("Misago User ACL")
+    title = _("Kaopu User ACL")
     template = "misago/acl_debug.html"
 
     @property

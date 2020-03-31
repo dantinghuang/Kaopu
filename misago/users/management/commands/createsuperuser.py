@@ -1,5 +1,5 @@
 """
-Misago-native rehash of Django's createsuperuser command that
+Kaopu-native rehash of Django's createsuperuser command that
 works with double authentication fields on user model
 """
 import sys
@@ -52,7 +52,7 @@ class Command(BaseCommand):
             dest="interactive",
             default=True,
             help=(
-                "Tells Misago to NOT prompt the user for input "
+                "Tells Kaopu to NOT prompt the user for input "
                 "of any kind. You must use --username with "
                 "--noinput, along with an option for any other "
                 "required field. Superusers created with "

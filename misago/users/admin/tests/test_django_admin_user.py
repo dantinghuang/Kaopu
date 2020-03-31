@@ -58,7 +58,7 @@ class TestDjangoAdminUserForm(AdminTestCase):
             self.assertTrue(is_user_has_perm)
 
     def test_misago_admin_url_presence_in_user_edit_view(self):
-        """the url to Misago admin is present in Django admin user edit view"""
+        """the url to Kaopu admin is present in Django admin user edit view"""
         response = self.client.get(self.edit_test_user_in_django_url)
         self.assertContains(response, self.edit_test_user_in_misago_url)
         edit_from_misago_short_desc = (
@@ -67,6 +67,6 @@ class TestDjangoAdminUserForm(AdminTestCase):
         self.assertContains(response, edit_from_misago_short_desc)
 
     def test_misago_admin_url_presence_in_user_list_view(self):
-        """the url to Misago admin is present in Django admin user list view"""
+        """the url to Kaopu admin is present in Django admin user list view"""
         response = self.client.get(reverse("admin:misago_users_user_changelist"))
         self.assertContains(response, self.edit_test_user_in_misago_url)

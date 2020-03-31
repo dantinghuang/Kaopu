@@ -21,7 +21,7 @@ class ChangeSSOSettingsForm(ChangeSettingsForm):
     sso_public_key = forms.CharField(
         label=_("Public key"),
         help_text=_(
-            "Leave this field empty for Misago to generate this key on form submission."
+            "Leave this field empty for Kaopu to generate this key on form submission."
         ),
         max_length=64,
         required=False,
@@ -29,7 +29,7 @@ class ChangeSSOSettingsForm(ChangeSettingsForm):
     sso_private_key = forms.CharField(
         label=_("Private key"),
         help_text=_(
-            "Leave this field empty for Misago to generate this key on form submission."
+            "Leave this field empty for Kaopu to generate this key on form submission."
         ),
         max_length=64,
         required=False,

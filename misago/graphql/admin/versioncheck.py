@@ -24,9 +24,9 @@ def resolve_version(*_):
 def get_unreleased_error():
     return {
         "status": Status.ERROR,
-        "message": _("The site is running using unreleased version of Misago."),
+        "message": _("The site is running using unreleased version of Kaopu."),
         "description": _(
-            "Unreleased versions of Misago can lack security features and there is "
+            "Unreleased versions of Kaopu can lack security features and there is "
             "no supported way to upgrade them to release versions later."
         ),
     }
@@ -42,7 +42,7 @@ def check_version_with_api():
             "message": _("Failed to connect to pypi.org API. Try again later."),
             "description": _(
                 "Version check feature relies on the API operated by the Python "
-                "Package Index (pypi.org) API to retrieve latest Misago release "
+                "Package Index (pypi.org) API to retrieve latest Kaopu release "
                 "version."
             ),
         }
@@ -57,7 +57,7 @@ def get_latest_version():
 
 
 def get_latest_version_from_api():
-    api_url = "https://pypi.org/pypi/Misago/json"
+    api_url = "https://pypi.org/pypi/Kaopu/json"
     r = requests.get(api_url)
     r.raise_for_status()
     return r.json()["info"]["version"]
@@ -67,16 +67,16 @@ def compare_versions(current, latest):
     if latest == current:
         return {
             "status": Status.SUCCESS,
-            "message": _("The site is running updated version of Misago."),
-            "description": _("Misago %(version)s is latest release.")
+            "message": _("The site is running updated version of Kaopu."),
+            "description": _("Kaopu %(version)s is latest release.")
             % {"version": current},
         }
 
     return {
         "status": Status.ERROR,
-        "message": _("The site is running outdated version of Misago."),
+        "message": _("The site is running outdated version of Kaopu."),
         "description": _(
-            "The site is running Misago version %(version)s while version %(latest)s "
+            "The site is running Kaopu version %(version)s while version %(latest)s "
             "is available."
         )
         % {"version": current, "latest": latest},

@@ -10,7 +10,7 @@ def conf(request):
         "BLANK_AVATAR_URL": (
             request.settings.blank_avatar or static(settings.MISAGO_BLANK_AVATAR)
         ),
-        "DEBUG": settings.DEBUG,
+        "DEBUG": False, #settings.DEBUG,
         "LANGUAGE_CODE_SHORT": get_language()[:2],
         "LOGIN_REDIRECT_URL": settings.LOGIN_REDIRECT_URL,
         "LOGIN_URL": settings.LOGIN_URL,

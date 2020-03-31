@@ -10,7 +10,7 @@ from .providers import providers
 class MisagoSocialAuthConfig(AppConfig):
     name = "misago.socialauth"
     label = "misago_socialauth"
-    verbose_name = "Misago Social Auth"
+    verbose_name = "Kaopu Social Auth"
 
     def ready(self):
         # Register default providers
